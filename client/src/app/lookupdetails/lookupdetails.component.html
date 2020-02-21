@@ -1,0 +1,110 @@
+<body>
+<div class="title">
+ <h1>{{lookup.lookupname}}</h1>
+</div>
+<hr>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-4" style="padding:0px 50px 0px 50px">
+        <span id="rating" 
+        ><i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+        </span>
+        <!-- <h5>Ratings : {{lookup.ratings}}</h5>  -->
+        <h5>{{lookup.address}} </h5>
+        <div class="oh" style="background-color: rgb(7, 155, 155);margin-bottom:5px;border-radius:10px;
+        font-style: italic ;
+                font-family: 'Lobster',cursive;">
+                <h3 style="padding:10px 0px 0px 10px;  ">Opening Hours</h3>
+                 <div *ngFor = "let t of lookup.timings" style="padding:0px 0px 10px 10px;font-size:18px" >
+                     {{t.t1}}
+                    <br>
+                  {{t.t2}}
+                        
+                </div>
+           
+
+        </div>
+        <div class="oh" style="background-color: rgb(7, 155, 155);border-radius:10px;
+        font-style: italic ;
+                font-family: 'Lobster',cursive;">
+                <h3 style="padding: 10px;  ">Facilites</h3>
+                  <div *ngFor = "let f of lookup.facilites" style="padding:0px 0px 10px 10px;" >
+                        <button disabled="disabled">{{f.f1}}</button>
+                        <button disabled="disabled">{{f.f2}}</button>
+                        <button disabled="disabled">{{f.f3}}</button>
+                </div>
+           
+
+        </div>
+
+
+
+    </div>
+
+        <div class="col-sm-4"  style="padding:0px 50px 0px 50px; margin-top:10px;">
+                <div class="location" style=" background-color: rgb(7, 155, 155);height:auto;border-radius:10px;" > 
+                        <h3 style=" padding:2px 0px 2px 20px;font-style: italic ;
+                        font-family: 'Lobster',cursive;">Location map</h3>
+                        <span style=" padding:2px 0px 2px 20px;">
+                        <iframe width="320" height="300" id="gmap_canvas" 
+                        src="https://maps.google.com/maps?q=dominos%20pizza&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                        </iframe>
+                        </span>
+                    
+                        </div>
+        </div>
+
+        <div class="col-sm-4">
+                
+                        <h3 style="padding-top:30px">
+                           If you've been and you like it - or if you don't - please levae a review to help other people just like you.
+                        </h3>
+                  
+            
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row" style="margin-top:10px">
+            <div class="col-sm-8" style="padding:0px 50px 0px 50px">
+                <div class="cr" style="background-color: rgb(7, 155, 155);">
+                        <span style="font-size:30px;font-style: italic ;
+                        font-family: 'Lobster',cursive;padding-left:10px;">Customer Reviews</span>
+                                <span id="caption" style="float:right;">
+                                  <button type="button"  id="but" 
+                    class="btn" style="background-color: rgb(172, 46, 46);"  (click)="onClick(lookup.lookupid)">Add Review</button>
+                                </span>
+                            
+                                <table class="table table-striped table-dark" >
+                                        
+                                        <tbody>
+                                          <tr *ngFor="let r of lookup.review" >
+                                            <td>{{r.name}},{{r.rating}}<br>{{r.review}}</td>
+                                          
+                                            
+                                          </tr>
+                                         
+                                        </tbody>
+                                      </table>
+              
+                </div>
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>

@@ -1,0 +1,31 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#title{
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color : white;
+    padding: 5px;
+}
+#caption{
+    font-size: 25px;
+    font-style: italic ;
+    font-family: 'Lobster',cursive;
+    font-style: italic;
+    padding: 5px;
+    color: rgb(79, 80, 77);
+    font-weight: bold;
+}
+.body{
+    cursor: pointer;
+    background-color: rgb(7, 155, 155);
+    padding: 20px;
+    border-radius: 10px;
+   margin:10px;
+}
+.body:hover{
+    color: lightgray;
+}

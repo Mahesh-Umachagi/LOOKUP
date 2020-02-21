@@ -1,0 +1,30 @@
+<div class="container-fluid" style=" height: 120vh; background-color: #2b7a78">
+<div class="row mt-5">
+        <div class="col-sm-5" >
+                <img src="assets/login3.gif" style="float: right;">
+            </div>
+    <div class="col-sm-4 mx-auto">
+        <div class="card">
+            <div class="card-header" style="background-color: teal; color: white;">
+                Hello and Welcome Back!
+            </div>
+            <div class="card-body" style="background-color: whitesmoke;">
+                <form >
+                    <div class="form-group">
+                            <i class="fa fa-user" style="padding-right: 5px;"></i>  <label for="username">Username </label>
+                        <input [(ngModel)]="user.username" type="text" class="form-control" name="username" id="username">
+                    </div>
+                    <div class="form-group">
+                       <i class="fa fa-unlock-alt" style="padding-right: 5px;"></i> <label for="password">Password</label>
+                        <input [(ngModel)]="user.password" type="password" class="form-control" name="password" id="password">
+                    </div>
+                    <button class="btn btn-primary float-right" type="button" (click)="onLoginClick()">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        
+    </div>
+</div>
+</div>

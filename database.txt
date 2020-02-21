@@ -1,0 +1,11 @@
+database:
+({ "lookupid" :  ,
+    "lookupname" : ,
+    "address" : ,
+    "ratings" : ,
+    "distance" : ,
+    "timings" : ,
+    "facilities" : ,
+    "review" : [{ "name" : , "review" : , "ratings" : }]
+});
+    

@@ -1,0 +1,30 @@
+<div class="main">
+    <div class="head">
+        <span id="title">LOOKUP</span>
+        <span id="caption">Find places to work with wifi near you!</span>
+    </div>
+    <hr>
+<div class="container-fluid">
+
+        <div class="row">
+          <div class="col-sm-6" >
+                <div class="body" *ngFor="let l of lookup" >
+                        <app-lookuppanel [lookup]="l"></app-lookuppanel>
+                    </div>
+          </div>
+          <div class="col-sm-6"  style="padding:30px;font-size:35px;">
+            <div style="color:wheat;">
+               <a > LOOKUP helps you find places to work when out and about. Perhaps with coffee,cake or pint? Let
+                            LOOKUP 
+                            help you find the place you're looking for</a>
+
+               </div>
+               <div>
+                            <img src="assets/page.gif" style="height:500px;width:100%;">
+               </div>
+          </div>
+         
+        </div>
+      </div>
+      
+</div>

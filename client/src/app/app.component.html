@@ -1,0 +1,37 @@
+<body style="background-color: #2b7a78;height:auto;">
+
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #17252a; ">
+  <img src="assets\logo2.gif" style="height: 40px;width: 50px;">
+    <a style="color: white;" class="navbar-brand" href="#">LOOKUP</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a style="color: white;" class="nav-link" routerLink="/about">About </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav"  *ngIf="!lookupsservice.isLoggedIn()">
+            <li class="nav-item active" style="padding-right:25px ;">
+                <button style="color: white;" class="btn btn-outline-primary my-2 my-sm-0" routerLink="/register"type="submit">Register</button>
+            </li>
+            <li class="nav-item">
+                <button style="color: white;" class="btn btn-outline-primary my-2 my-sm-0" routerLink="/login"type="submit">login</button>
+            </li>
+        </ul>
+        <ul class="navbar-nav" *ngIf="lookupsservice.isLoggedIn()">
+                <li class="nav-item active">
+                    
+                    <button style="color: white;" class="btn btn-outline-danger my-2 my-sm-0" (click)="onLogout()" type="submit" >Logout</button>
+                </li>
+            </ul>
+    </div>
+  
+  </nav>
+
+
+
+<router-outlet></router-outlet>
+
+</body>

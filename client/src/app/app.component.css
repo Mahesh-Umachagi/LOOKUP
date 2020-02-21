@@ -1,0 +1,51 @@
+/* *{
+    padding: 0px;
+    margin: 0px;
+}
+#logo{
+    font-size: 40px;
+    color: whitesmoke;
+    padding: 5px;
+    margin-left: 20px;
+    font-weight: bolder;
+}
+#about{
+    font-size: 20px;
+    color: whitesmoke;
+    padding-top: 15px;
+    margin-left: 10px;
+}
+#about:hover{
+    color: grey;
+}
+
+#reg{
+    font-size: 20px;
+    color: whitesmoke;
+    padding-top: 15px;
+    float: right;
+    margin-left: 40em;
+}
+#reg:hover{
+    color: grey;
+}
+#logout{
+    font-size: 20px;
+    color: whitesmoke;
+    padding-top: 15px;
+    float: right;
+    margin-left: 40em;
+}
+#logout:hover{
+    color: grey;
+}
+#log{
+    font-size: 20px;
+    color: whitesmoke;
+    padding-top: 15px;
+    float: right;
+
+}
+#log:hover{
+    color: grey;
+} */
